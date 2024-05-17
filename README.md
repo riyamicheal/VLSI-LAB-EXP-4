@@ -1,41 +1,14 @@
-# VLSI-LAB-EXP-4
-SIMULATION AND IMPLEMENTATION OF SEQUENTIAL LOGIC CIRCUITS
+# SIMULATION AND IMPLEMENTATION OF SEQUENTIAL LOGIC CIRCUITS
 
-# AIM: 
+# Aim: 
+
 To simulate and synthesis SR, JK, T, D - FLIPFLOPS, COUNTERS design using vivado..
 
-# APPARATUS REQUIRED:
+# Apparatus Required:
 
 vivado 2023.2
 
-**LOGIC DIAGRAM**
-
-# SR FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/77fb7f38-5649-4778-a987-8468df9ea3c3)
-
-
-# JK FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
-
-# T FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
-
-
-# D FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
-
-
-# COUNTER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
-
-
-  
-# PROCEDURE:
+# Procedure:
 
 STEP:1 Start the vivado software, Select and Name the New project.
 
@@ -51,9 +24,13 @@ STEP:6 Click the simulation to simulate the program and give the inputs and veri
 
 STEP:7 compare the output with truth table.
 
-# VERILOG CODE
+**LOGIC DIAGRAM**
 
-# SR Flipflop
+# SR FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/77fb7f38-5649-4778-a987-8468df9ea3c3)
+
+# Verilog code:
 
 module srff(clk,j,k,rst,q );
 
@@ -91,7 +68,15 @@ end
 
 endmodule
 
-# JK Flipflop
+# Output:
+
+ ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/a0dfa2a9-eb35-4a11-a8a0-6abcde9e7b77)
+ 
+# JK FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
+
+# Verilog code:
 
 module jkff(clk,j,k,rst,q );
 
@@ -129,7 +114,15 @@ end
 
 endmodule
 
-# T Flipflop
+# Output:
+
+ ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/3c4466cb-7563-4a2a-902b-f0bae1506ab3)
+
+# T FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
+
+# Verilog code:
 
 module tff(clk,reset,t,q);
 
@@ -163,7 +156,15 @@ end
 
 endmodule
 
-# D Flipflop
+# Output:
+
+ ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/c33c11c4-ae72-446d-ae75-6224b3a1319a)
+ 
+# D FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
+
+# Verilog code:
 
 module tff(clk,reset,t,q);
 
@@ -196,6 +197,16 @@ end
 end
 
 endmodule
+
+# Output:
+
+![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/1c5cff74-a60f-4574-b51d-e8cbac24481b)
+
+# COUNTER
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
+
+# Verilog code:
 
 # Up Down Counter
 
@@ -225,6 +236,10 @@ end
 
 endmodule
 
+# Output:
+
+![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/487edbf1-ca96-4c3d-ad64-3425c438436f)
+
 # Mod10 Counter
 
 module mod(clk,rst,count);
@@ -248,6 +263,10 @@ count <= count +1;
 end
 
 endmodule
+
+# Ouput:
+
+ ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/34adac6f-1279-4dc7-b8fb-f77f221c089a)
 
 # Ripple Counter
 
@@ -305,41 +324,9 @@ end
 
 endmodule
 
-   
-
-OUTPUT WAVEFORM
-
- # SR Flipflop
-
- ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/a0dfa2a9-eb35-4a11-a8a0-6abcde9e7b77)
-
- # JK Flipflop
-
- ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/3c4466cb-7563-4a2a-902b-f0bae1506ab3)
-
- # T Flipflop
-
- ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/c33c11c4-ae72-446d-ae75-6224b3a1319a)
-
- # D Flipflop
-
- ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/1c5cff74-a60f-4574-b51d-e8cbac24481b)
-
- # Up Down Counter
-
- ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/487edbf1-ca96-4c3d-ad64-3425c438436f)
-
-
- # Mod10 Counter
-
- ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/34adac6f-1279-4dc7-b8fb-f77f221c089a)
-
-
- # Ripple Counter
+# Output:
 
  ![image](https://github.com/riyamicheal/VLSI-LAB-EXP-4/assets/124061774/764b75f4-a98b-459b-a67e-03f9ad4cf628)
-
- 
 
 # RESULT:
 
